@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.280">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Naia Apriani Rosvania (210203784)">
+<meta name="dcterms.date" content="2023-01-20">
+
+<title>Analisis Pengaruh Inflasi Terhadap PDB Indonesia dalam kurun waktu 10 Tahun (Tahun 2012-2021)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Analisis Pengaruh Inflasi Terhadap PDB Indonesia dalam kurun waktu 10 Tahun (Tahun 2012-2021)</h1>
+<p class="subtitle lead">Metode Penelitian Politeknik APP Jakarta</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Naia Apriani Rosvania (210203784) </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 20, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="poltekapp.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">.</figcaption><p></p>
+</figure>
+</div>
+<section id="pendahuluan" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="pendahuluan"><span class="header-section-number">1</span> Pendahuluan</h2>
+<section id="latar-belakang" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="latar-belakang"><span class="header-section-number">1.1</span> Latar belakang</h3>
+<p>Dalam tulisan ini topik yang akan dibahas adalah tentang bagaimana inflasi dapat berpengaruh terhadap pertumbuhan ekonomi dalam rentang tahun 2012-2021. Dalam dunia ekonomi, khususnya ekonomi makro salah satu hal yang paling sering dibahas adalah inflasi. Tinggi rendahnya inflasi akan menentukan kebijakan yg diambil oleh bank sentral untuk menjaga kestabilan harga dan daya beli masyarakat, jika inflasi tinggi akan mendorong tingkat suku bunga naik yang menyebabkan lesunya iklim investasi, kemudian pengangguran meningkat diiringi dengan konsumsi masyarakat yang menurun. Turunnya tingkat konsumsi agregat berdampak terhadap pendapatan pemerintah sehingga mempengaruhi laju pertumbuhan ekonomi. Apabila perekonomian suatu negara mengalami suatu kelesuan, maka Bank Indonesia dapat melakukan kebijakan moneter yang ekspansif dengan cara menurunkan tingkat suku bunga.</p>
+<p>Inflasi adalah kenaikan harga agregat pada komoditas yang terjadi secara terus menerus yang merupakan implikasi dari adanya perubahan pada tingkat investment, government spending, dan net export. Dalam pandangan ekonomi, inflasi merupakan sebuah fenomena moneter dalam suatu negara. Ketidakstabilan inflasi cenderung mengakibatkan terjadinya gejolak ekonomi. Tujuan utama dari pengendalian inflasi adalah kebijakan makro ekonomi untuk sebagian besar negara di dunia dengan cara pemeliharaan stabilitas harga. Hal ini dilakukan untuk mencapai pertumbuhan ekonomi yang berkelanjutan.</p>
+<p>Pertumbuhan ekonomi merupakan salah satu indikator yang digunakan dalam melihat kondisi perekonomian di suatu negara. Umumnya pertumbuhan ekonomi diukur menggunakan produk domestik bruto (PDB). Dimana PDB dihitung berdasarkan jumlah barang dan jasa yang dihasilkan dalam suatu negara selama periode tertentu Hal tersebut sesuai dengan pendapat Samuelson (1998:390) yaitu:</p>
+<p>“The gross domestic product (or GDP) is the most comprehensive measure of a nation’s total output of goods and services. It is sum of dollar values of consumption, gross investment, government purcaheses of goods and services, and net exports produced within a anation during a given year.”</p>
+<p>Produk Domestik Bruto digunakan untuk berbagai hal khususnya untuk melihat performa perekonomian di suatu negara. Dengan membandingkan nilai PDB dari satu periode dengan periode sebelumnya akan terlihat laju pertumbuhan ekonomi. Peningkatan ataupun penurunan dalam laju pertumbuhan ekonomi tersebut akan digunakan sebagai pertimbangan dalam pengambilan kebijakan yang tepat untuk menjaga stabilitas perekonomian. Penelitian tentang keterkaitan antara inflasi dan pertumbuhan ekonomi ini perlu untuk dilakukan karena kedua variabel tersebut merupakan indikator makroekonomi yang penting dan memiliki peranan besar dalam menentukan kestabilan perekonomian suatu negara. Selain itu, dengan mengetahui hubungan antara kedua hal tersebut maka akan mempermudah untuk menentukan kebijakan yang tepat dalam mencapai kestabilan suatu perekonomian. Inflasi merupakan representatif dari pencapaian tingkat harga yang stabil. Sementara pertumbuhan ekonomi adalah parameter tingkat produktivitas suatu negara. Dengan demikian, hubungan antara inflasi dan pertumbuhan ekonomi merupakan hal penting untuk diteliti. Mengingat pentingnya masalah inflasi dan hubungannya dengan pertumbuhan ekonomi, sebagaimana telah dijelaskan pada latar belakang di atas, maka penulis tertarik untuk mengkaji lebih dalam mengenai arah hubungan antara inflasi dengan pertumbuhan ekonomi di Indonesia dan mempelajari bagaimana bentuk hubungan yang terjadi diantara kedua variabel tersebut.</p>
+</section>
+<section id="ruang-lingkup" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="ruang-lingkup"><span class="header-section-number">1.2</span> Ruang lingkup</h3>
+<p>Dalam tulisan ini akan diberikan batasan yang akan mencakup tentang bagaimana inflasi bisa mempengaruhi nilai pertumbuhan ekonomi, dan ruang lingkup penelitian ini yang hanya menggunakan data dalam kurun waktu 10 tahun (dari tahun 2012 sampai dengan tahun 2021). kegiatan pengambilan data diperoleh melalui Web Kementerian Dalam Negeri.</p>
+</section>
+<section id="rumusan-masalah" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="rumusan-masalah"><span class="header-section-number">1.3</span> Rumusan masalah</h3>
+<p>Berdasarkan uraian latar belakang masalah diatas, maka terdapat beberapa indikator yang menjadi rumusan masalah dalam penelitian ini. Adapun rumusan masalah tersebut adalah sebagai berikut:</p>
+<ol type="1">
+<li>Apakah inflasi berpengaruh terhadap pertumbuhan ekonomi Indonesia dalam rentang waktu 10 tahun (dari tahun 2012-2021)</li>
+</ol>
+</section>
+<section id="tujuan-dan-manfaat-penelitian" class="level3" data-number="1.4">
+<h3 data-number="1.4" class="anchored" data-anchor-id="tujuan-dan-manfaat-penelitian"><span class="header-section-number">1.4</span> Tujuan dan manfaat penelitian</h3>
+<p>Berdasarkan latar belakang dan rumusan masalah penelitian ini, adapun yang menjadi tujuan dari penelitian ini adalah:</p>
+<ol type="1">
+<li><p>Tujuan penulisan paper ini adalah untuk memenuhi tugas mata kuliah Metodogi Penelitian sebagai tugas pengganti UAS.</p></li>
+<li><p>Untuk mengetahui dan menganalisis seberapa besar pengaruh inflasi terhadap pertumbuhan ekonomi Indonesia dalam rentang waktu 10 tahun (dari tahun 2012-2021)</p></li>
+</ol>
+<p>Adapun manfaat yang diperoleh dari penelitian ini adalah:</p>
+<ol type="1">
+<li><p>Bagi peneliti bertambahnya ilmu pengetahuan dan wawasan terkait topik yang dibahas.</p></li>
+<li><p>Bagi masyarakat memberikan informasi kepada khalayak umum mengenai pengaruh inflasi terhadap pertumbuhan ekonomi Indonesia dalam rentang waktu 10 tahun (dari tahun 2012-2021).</p></li>
+</ol>
+</section>
+</section>
+<section id="studi-pustaka" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="studi-pustaka"><span class="header-section-number">2</span> Studi pustaka</h2>
+<p><strong>Pertumbuhan ekonomi (Economic growth)</strong></p>
+<p>(Kuznets, 1971) menyatakan Pertumbuhan ekonomi adalah kenaikan kapasitas dalam jangka panjang dari negara yang bersangkutan untuk menyediakan berbagai barang ekonomi bagi penduduknya. Kenaikan kapasitas itu sendiri ditentukan atau dimungkinkan oleh adanya kemajuan atau penyesuaian-penyesuaian teknologi, kelembagaan, dan ideologis terhadap berbagai tuntutan keadaan yang ada. Faktor yang diperhatikan dalam mengukur pertumbuhan ekonomi adalah Produk Domestik Bruto (PDB). Produk Domestik Bruto (PDB) adalah total produksi barang dan jasa yang dihasilkan dalam satu waktu tertentu di satu negara atau wilayah tertentu. Ada 3 cara untuk menganalisis mekanisme (kinerja) ekonomi Nasional berdasarkan PDB, yaitu:</p>
+<ol type="1">
+<li><p>Pendekatan Produksi</p></li>
+<li><p>Pendekatan Pengeluaran/Pembelanjaan</p></li>
+<li><p>Pendekatan Pendapatan</p></li>
+</ol>
+<p>Menurut M. Suparko dan Maria R. ada beberapa macam alat yang dapat digunakan untuk mengukur pertumbuhan ekonomi yaitu :</p>
+<ol type="1">
+<li><p>Produk Domestik Bruto PDB adalah jumlah barang dan jasa akhir yang dihasilkan dalam harga pasar. Kelemahan PDB sebagai ukuran pertumbuhan ekonomi adalah sifatnya yang global dan tidak mencerminkan kesejahteraan penduduk.</p></li>
+<li><p>PDB per Kapita atau Pendapatan Perkapita PDB per kapita merupakan ukuran yang lebih tepat karena telah memperhitungkan jumlah penduduk. Jadi ukuran pendapatn perkapita dapat diketahui dengan membagi PDB dengan jumlah penduduk.</p></li>
+<li><p>Pendapatan Per jam Kerja Suatu negara dapat dikatakan lebih maju dibandingkan negara lain bila mempunyai tingkat pendapatan atau upah per jam kerja yang lebih tinggi daripada upah per jam kerja di negara lain untuk jenis pekerjaan yang sama</p></li>
+</ol>
+<p>Inflasi (Boediono, 2014) menyatakan Inflasi adalah suatu gejala dimana tingkat harga umum mengalami kenaikan secara terus menerus. Kenaikan harga dari satu dua barang saja tidak dapat disebut inflasi, kecuali bila kenaikan tersebut meluas kepada (atau mengakibatkan kenaikan) sebagian besar dari harga barang-barang lain. Inflasi adalah naiknya harga-harga komoditi secara umum yang disebabkan oleh tidak sinkronnya antara program pengadaan komoditi (produksi, penentuan harga, pencetakan uang, dan sebagainya) dengan tingkat pendapatan yang dimiliki oleh masyarakat</p>
+<p>Teori yang Menggambarkan Hubungan antara Inflasi dengan Pertumbuhan Ekonomi</p>
+<ol type="1">
+<li><p><strong>Teori pertumbuhan klasik</strong></p>
+<p>Teori klasik meletakkan dasar pertama untuk sejumlah pertumbuhan teori selanjutnya. Model pertumbuhan klasik oleh Adam Smith adalah Y = f (L, K, T). Di mana Y adalah output, L adalah tenaga kerja, K adalah modal dan T adalah tanah. Sehingga output terkait dengan tenaga kerja, modal dan, tanah. Akibatnya, pertumbuhan output didorong oleh pertumbuhan penduduk, investasi, pertumbuhan lahan, dan peningkatan produktivitas secara keseluruhan. Selain itu, ia melihat tabungan sebagai pencipta pertumbuhan investasi dan karenanya ia melihat distribusi pendapatan sebagai salah satu penentu yang paling penting dari cepat atau lambat bangsa akan tumbuh.</p></li>
+<li><p><strong>The Phillips Curve</strong></p>
+<p>Tradeoff antara inflasi dan pengangguran digambarkan sebagai kurva Phillips. Penemuan empiris oleh Phillips menunjukkan hubungan terbalik antara tingkat upah dan pengangguran. Penemuan ini diperkuat oleh fakta bahwa pergerakan dalam upah dapat dijelaskan oleh tingkat dan perubahan pengangguran. Sebuah argumen yang mendukung kurva Phillips adalah ekstensi yang menetapkan hubungan antara harga dan pengangguran. Ini bertumpu pada asumsi bahwa upah dan harga bergerak ke arah yang sama. Kekuatan kurva Phillips adalah adanya hubungan antara inflasi dan pengangguran.</p></li>
+<li><p><strong>The Monetarist</strong></p>
+<p>Teori Kuantitas Uang (QTM) mengemukakan bahwa kuantitas uang adalah penentu utama tingkat harga, atau nilai uang, sehingga setiap perubahan dalam kuantitas uang menghasilkan perubahan persis langsung dan proporsional dalam tingkat harga. The monetaris menekankan bahwa setiap perubahan dalam kuantitas uang hanya mempengaruhi tingkat harga atau sisi moneter ekonomi, dengan sektor riil perekonomian benar-benar terisolasi. Hal ini menunjukkan bahwa perubahan suplai uang tidak mempengaruhi output riil barang dan jasa, tetapi mempengaruhi nilai atau harga di mana mereka dipertukarkan saja.</p></li>
+<li><p><strong>The Keynesian</strong></p>
+<p>The Keynesian menentang pandangan monetaris tentang hubungan antara kuantitas uang dan harga. Menurut keynesian, hubungan antara perubahan kuantitas uang dan harga adalah non proporsional dan tidak langsung, melalui suku bunga. Kekuatan teori Keynesian adalah integrasi dari teori moneter di satu sisi dan teori output dan kesempatan kerja melalui suku bunga di sisi lain. Jadi, ketika kuantitas uang meningkat, tingkat bunga jatuh, yang menyebabkan peningkatan volume investasi dan permintaan agregat, sehingga meningkatkan output dan kesempatan kerja. Keynesian melihat hubungan nyata sektor ekonomi moneter yang menggambarkan keseimbangan dalam barang dan pasar uang.</p>
+<p>Menurut keynesian, asalkan ada pengangguran, output dan kesempatan kerja akan berubah dalam proporsi yang sama dengan kuantitas uang, tapi tidak akan ada perubahan harga. Namun, pada kesempatan kerja penuh,, perubahan kuantitas uang akan menyebabkan perubahan proporsional dalam harga. Model Keynesian terdiri dari kurva Agregat Demand (AD) dan Agregat Supply (AS), yang tepat menggambarkan hubungan antara inflasi dengan pertumbuhan. Banyak faktor yang mendorong tingkat inflasi dan tingkat output dalam jangka pendek. Ini termasuk perubahan: harapan; tenaga kerja berlaku; harga faktor produksi lainnya, dan/ atau kebijakan moneter fiskal. Kurva jangka pendek AD dan AS menunjukkan hubungan yang positif antara inflasi dan pertumbuhan ekonomi untuk jangka pendek. Namun, ternyata untuk jangka panjang menunjukkan hubungan yang negatif.</p></li>
+</ol>
+</section>
+<section id="metode-penelitian" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="metode-penelitian"><span class="header-section-number">3</span> Metode penelitian</h2>
+<section id="data" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="data"><span class="header-section-number">3.1</span> Data</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Tahun</th>
+<th>Inflasi (X)</th>
+<th>PDB (Y)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2012</td>
+<td>0,043</td>
+<td>917869910105,749</td>
+</tr>
+<tr class="even">
+<td>2013</td>
+<td>0,07</td>
+<td>912524136718,018</td>
+</tr>
+<tr class="odd">
+<td>2014</td>
+<td>0,064</td>
+<td>890814755233,225</td>
+</tr>
+<tr class="even">
+<td>2015</td>
+<td>0,064</td>
+<td>860854235065,079</td>
+</tr>
+<tr class="odd">
+<td>2016</td>
+<td>0,035</td>
+<td>931877364177,742</td>
+</tr>
+<tr class="even">
+<td>2017</td>
+<td>0,038</td>
+<td>1015618742565,81</td>
+</tr>
+<tr class="odd">
+<td>2018</td>
+<td>0,032</td>
+<td>1042271531011,99</td>
+</tr>
+<tr class="even">
+<td>2019</td>
+<td>0,028</td>
+<td>1119099868265,25</td>
+</tr>
+<tr class="odd">
+<td>2020</td>
+<td>0,02</td>
+<td>1058688935454,78</td>
+</tr>
+<tr class="even">
+<td>2021</td>
+<td>0,016</td>
+<td>1186092991320,04</td>
+</tr>
+</tbody>
+</table>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'tidyverse' was built under R version 4.2.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──
+✔ ggplot2 3.4.0      ✔ purrr   0.3.5 
+✔ tibble  3.1.8      ✔ dplyr   1.0.10
+✔ tidyr   1.2.1      ✔ stringr 1.4.1 
+✔ readr   2.1.3      ✔ forcats 0.5.2 </code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'ggplot2' was built under R version 4.2.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'readxl' was built under R version 4.2.2</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>dat<span class="ot">&lt;-</span><span class="fu">read_excel</span>(<span class="st">'data naia.xlsx'</span>)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>dat, <span class="fu">aes</span>(<span class="at">x=</span>X, <span class="at">y=</span>Y))<span class="sc">+</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color=</span><span class="st">'blue'</span>, <span class="at">size=</span><span class="dv">2</span>)<span class="sc">+</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">"Tabel 1. Plot Terhadap Pertumbuhan Ekonomi Indonesia"</span>,</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">x=</span><span class="st">"Inflasi"</span>,</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">y=</span><span class="st">"PDB"</span>,</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="st">"Sumber: World Development Indicators, Kementrian Perdagangan"</span>) <span class="sc">+</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/fig0-mpg-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Plot Terhadap Pertumbuhan Ekonomi Indonesia</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="metode-analisis" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="metode-analisis"><span class="header-section-number">3.2</span> Metode analisis</h3>
+<p>Metode analisis yang digunakan dalam penelitian ini adalah metode kuantitatif dan penjabaran deskriptif. Teknik analisis kuantitatif merupakan analisis yang dilakukan dengan perhitungan angka-angka yang faktor yang mempengaruhi inflasi terhadap pertumbuhan ekonomi negara. Metode deskriptif digunakan untuk membuat gambaran secara sistematis dan faktual mengenai gambaran perkembangan dari setiap variabel inflasi dan pertumbuhan ekonomi selanjutnya pendekatan yang digunakan adalah kuantitatif dengan mengaplikasikan model regresi linier berganda. Secara spesifik model tersebut dapat disajikan sebagai berikut:</p>
+<p><span class="math display">\[
+y_{t}=\beta_0 + \beta_1 x_t+\mu_t
+\]</span></p>
+<p>Dimana:</p>
+<p><span class="math inline">\(y_t\)</span> = Pertumbuhan Ekonomi</p>
+<p><span class="math inline">\(x_t\)</span> = Inflasi</p>
+<p><span class="math inline">\(μ_t\)</span> = Error Terms</p>
+</section>
+</section>
+<section id="pembahasan" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="pembahasan"><span class="header-section-number">4</span> 4. Pembahasan</h2>
+<section id="pembahasan-masalah" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="pembahasan-masalah"><span class="header-section-number">4.1</span> Pembahasan masalah</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Tahun</th>
+<th>Inflasi (X)</th>
+<th>PDB (Y)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2012</td>
+<td>0,043</td>
+<td>917869910105,749</td>
+</tr>
+<tr class="even">
+<td>2013</td>
+<td>0,07</td>
+<td>912524136718,018</td>
+</tr>
+<tr class="odd">
+<td>2014</td>
+<td>0,064</td>
+<td>890814755233,225</td>
+</tr>
+<tr class="even">
+<td>2015</td>
+<td>0,064</td>
+<td>860854235065,079</td>
+</tr>
+<tr class="odd">
+<td>2016</td>
+<td>0,035</td>
+<td>931877364177,742</td>
+</tr>
+<tr class="even">
+<td>2017</td>
+<td>0,038</td>
+<td>1015618742565,81</td>
+</tr>
+<tr class="odd">
+<td>2018</td>
+<td>0,032</td>
+<td>1042271531011,99</td>
+</tr>
+<tr class="even">
+<td>2019</td>
+<td>0,028</td>
+<td>1119099868265,25</td>
+</tr>
+<tr class="odd">
+<td>2020</td>
+<td>0,02</td>
+<td>1058688935454,78</td>
+</tr>
+<tr class="even">
+<td>2021</td>
+<td>0,016</td>
+<td>1186092991320,04</td>
+</tr>
+</tbody>
+</table>
+<p>Sumber: Satu data Kementerian Perdagangan (<a href="https://satudata.kemendag.go.id/" class="uri">https://satudata.kemendag.go.id/</a>)</p>
+<p>Berdasarkan data diatas Berdasarkan tabel di atas, pertumbuhan PDB Indonesia tahun 2010-2021 tumbuh secara fluktuatif. Pada tahun 2010-2011 PDB Indonesia mengalami perkembangan sebesar 18,26% ekonomi pada tahun tersebut perkembang baik, pendapatan masyarakat dapat menopang konsumsi masyarakat dan tumbuh stabil. Pada tahun-tahun berikutnya sampai pada tahun 2015 PDB Indonesia terus mengalami penurunan sampai di tahun terendahnya yaitu 2015 yaitu sebesar -3,36% sejumlah USD 860.854.235.065 salah satu penyebab penurunan ini terjadi karena kebijakan pemerintah. Pada 2 tahun berikutnya tahun 2016-2017 PDB Indonesia mengalami pertumbuhan sebesar 8,99% kenaikan ini disebabkan struktur ekonomi Indonesia secara spasial Tahun 2017. Selanjutnya di tahun 2020 PDB Indonesia mengalami penurunan kembali sebesar -5,40% dan mengalami kenaikan kembali di tahun berikutnya yaitu sebesar 12,3%.</p>
+</section>
+<section id="analisis-masalah" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="analisis-masalah"><span class="header-section-number">4.2</span> Analisis Masalah</h3>
+<p>Hasil pengaruh inflasi terhadap pertumbuhan ekonomi diestimasi menggunakan regresi univariat. Hasilnya ditunjukkan sebagai berikut:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>dat<span class="ot">&lt;-</span><span class="fu">read_excel</span>(<span class="st">"data naia.xlsx"</span>)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>reg<span class="ot">&lt;-</span><span class="fu">lm</span>(Y<span class="sc">~</span>X,<span class="at">data=</span>dat)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(reg)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = Y ~ X, data = dat)
+
+Residuals:
+       Min         1Q     Median         3Q        Max 
+-9.086e+10 -3.294e+10  6.212e+09  4.719e+10  7.101e+10 
+
+Coefficients:
+              Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  1.193e+12  4.564e+10  26.138 4.93e-09 ***
+X           -4.860e+12  1.019e+12  -4.772  0.00141 ** 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 5.819e+10 on 8 degrees of freedom
+Multiple R-squared:   0.74, Adjusted R-squared:  0.7075 
+F-statistic: 22.77 on 1 and 8 DF,  p-value: 0.001405</code></pre>
+</div>
+</div>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Variabel</th>
+<th>Coeficient</th>
+<th>Std.Error</th>
+<th>t.value</th>
+<th>Prob</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Intercept</td>
+<td>1.193e+12</td>
+<td>4.564e+10</td>
+<td>26.138</td>
+<td>4.93e-09 ***</td>
+</tr>
+<tr class="even">
+<td>X</td>
+<td>-4.860e+12</td>
+<td>1.019e+12</td>
+<td>-4.772</td>
+<td>0.00141 **</td>
+</tr>
+</tbody>
+</table>
+<table class="table">
+<thead>
+<tr class="header">
+<th>R-Squared</th>
+<th>0.74</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Adjusted R-Squared</td>
+<td>0.7075</td>
+</tr>
+<tr class="even">
+<td>F-Statistic</td>
+<td>22.77</td>
+</tr>
+<tr class="odd">
+<td>Prob (F-Statistic)</td>
+<td>0.001405</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>Hasil di atas merupakan hasil estimasi OLS dengan menggunakan model regresi mutivariat. Hasil regresi tersebut digunakan untuk mengetahui hubungan antara variabel dependen dan variabel independen. Variabel dependen yang digunakan adalah tingkat pertumbuhan ekonomi (GDP) sedangkan Variabel independen yang digunakan adalah inflasi. Dari hasil regresi dapat dilihat bahwa jumlah ekspor berpengaruh positif terhadap pertumbuhan ekonomi. Dan jika dilihat hasil regresi dapat dilihat bahwa jumlah impor berpengaruh negatif terhadap pertumbuhan ekonomi.</p>
+<p>Jumlah Inflasi meningkat sebesar 1 persen maka akan menurunkan pertumbuhan ekonomi sebesar&nbsp;&nbsp;&nbsp; -4.860e+12. Apabila jumlah inflasi menurun akan meningkatkan pertumbuhan ekonomi sebesar 4.860e+12. artinya Inflasi berpengaruh terhadap Pertumbuhan Ekonomi Indonesia/Produk Domestik Bruto (PDB). Inflasi berpengaruh signifikan terhadap Pertumbuhan Ekonomi Indonesia/Produk Domestik Bruto (PDB), Hal yang menyebabkan meningkatnya inflasi di Indonesia salah satunya dikarenakan pandemi Covid-19 yang melanda Indonesia yang berakibat naiknya harga BBM, harga sembako, menurunnya minat masyarakat membeli, bahkan meningkat drastisnya pengangguran di Indonesia.</p>
+</section>
+</section>
+<section id="kesimpulan" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="kesimpulan"><span class="header-section-number">5</span> Kesimpulan</h2>
+<p>Terdapat hubungan antara pengaruh Inflasi terhadap Pertumbuhan Ekonomi Indonesia Periode 2012-2021. Pertumbuhan Ekonomi Indonesia atas Inflasi memiliki hubungan yang lemah. Inflasi menunjukkan nilai negatif dan berpengaruh secara signifikan terhadap pertumbuhan ekonomi Indonesia. Yang berarti naiknya tingkat inflasi akan menurunkan pertumbuhan ekonomi secara signifikan.</p>
+</section>
+<section id="saran" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="saran"><span class="header-section-number">6</span> Saran</h2>
+<p>Berdasarkan hasil yang sudah dibahas penulis dapat memberikan saran-saran sebagai berikut:</p>
+<ol type="1">
+<li><p>Pemerintah harus mampu menjaga kestabilan harga barang dan jasa, serta kondisi keamanan dalam negeri yang stabil dan kondusif sehingga tingkat inflasi dapat dikendalikan dengan baik. Pemerintah pada intinya harus mampu menjaga kestabilan harga secara keseluruhan dan dalam menentukan kebijakan mengenai harga dan pendapatan harus disesuaikan dengan kondisi ekonomi yang terjadi pada saat itu sehingga inflasi yang tinggi dapat dihindari, serta pemerintah harus tetap mengupayakan agar tingkat inflasi tetap terkendali di bawah 5%.</p></li>
+<li><p>Peran pemerintah agar laju inflasi mencapai tingkat yang paling rendah dengan melakukan operasi pasar, menjaga kecukupan pasokan dan ketersediaan barang, mengamankan stok didaerah, menjaga kelancaran distribusi barang dan mengembangkan sistem logistik nasional. Pemerintah diharapkan dapat menurunkan tingkat inflasi, yaitu dengan cara menjaga nilai tukar rupiah agar tidak terdepresiasi, menurunkan jumlah uang beredar, Diharapakan pemerintah mau mengoptimalkan kebijakan penghasilan (income policy) dan kebijakan insentif perpajakan (tax incentive plan).</p></li>
+<li><p>Sebaiknya kebijakan Bank Indonesia sebagai induknya bank di Indonesia yang mengatur kebijakan tentang suku bunga haruslah sesuai dengan prosedur dan situasinya</p></li>
+</ol>
+</section>
+<section id="referensi" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="referensi"><span class="header-section-number">7</span> Referensi</h2>
+<p>Dharma, B. D., &amp; Djohan, S. (2015). Pengaruh investasi dan inflasi terhadap kesempatan kerja melalui pertumbuhan ekonomi. KINERJA, 12(1).</p>
+<p>Nadirin, M. (2017). Hubungan antara Inflasi dan Pertumbuhan Ekonomi di Indonesia periode 1994.1-2013.4. <em>Jurnal Ilmiah Mahasiswa FEB</em>, <em>5</em>(2), Article 2.</p>
+<p>Salim, A., Fadilla, F., &amp; Purnamasari, A. (2021). Pengaruh Inflasi Terhadap Pertumbuhan Ekonomi Indonesia. <em>Ekonomica Sharia: Jurnal Pemikiran Dan Pengembangan Ekonomi Syariah</em>, <em>7</em>(1), 17–28.</p>
+<p><em>PENGARUH INFLASI TERHADAP PERTUMBUHAN EKONOMI DI INDONESIA | JOURNAL OF MANAGEMENT Small and Medium Entreprises (SME’s)</em>. (n.d.). Retrieved 20 January 2023, from <a href="https://ejurnal.undana.ac.id/JEM/article/view/3311" class="uri">https://ejurnal.undana.ac.id/JEM/article/view/3311</a>.</p>
+<p><em>Inflasi Menurut Kelompok Pengeluaran, 2012-2021 | Satu Data Perdagangan</em>. (2022). Retrieved 20 January 2023, from <a href="https://satudata.kemendag.go.id/data-informasi/perdagangan-dalam-negeri/inflasi-2020" class="uri">https://satudata.kemendag.go.id/data-informasi/perdagangan-dalam-negeri/inflasi-2020</a></p>
+<p><em>GDP (current US$) | Data Indonesia</em>. 2012-2021. Retrieved 20 January 2023, from <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.CD" class="uri">https://data.worldbank.org/indicator/NY.GDP.MKTP.CD</a></p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
